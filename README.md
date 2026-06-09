@@ -184,22 +184,6 @@ dist/custom.css
 
 This sends the final CSS file to the WordPress project.
 
-## Why This Workflow Is Useful
-
-WordPress editors can become messy when writing a lot of custom CSS directly inside the dashboard.
-
-This workflow keeps the CSS:
-
-* local
-* version-controlled
-* separated into logical files
-* editable in Neovim
-* easier to debug
-* easier to reuse
-* safer to deploy
-
-Instead of having one large unorganized CSS block in WordPress, the project keeps source files clean and only generates one final CSS file for WordPress.
-
 ## Example Development Flow
 
 ```bash
@@ -241,18 +225,3 @@ dist/custom.css
 ```
 
 because the `dist/custom.css` file will be overwritten every time `build-css.fish` runs.
-
-## Summary
-
-This project creates a simple but effective bridge between local development in Neovim and WordPress styling.
-
-The workflow is:
-
-```txt
-edit CSS in Neovim
-→ build CSS into dist/custom.css
-→ watch changes automatically
-→ deploy manually to WordPress
-```
-
-This makes WordPress CSS development cleaner, faster, and more professional.
